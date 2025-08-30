@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Disco/Recursos_GOB/pagina_web/gbne_web/src/app/ClientBody.tsx"],"sourcesContent":["\"use client\";\n\nimport { useEffect } from \"react\";\n\nexport default function ClientBody({\n  children,\n  className,\n}: {\n  children: React.ReactNode;\n  className?: string;\n}) {\n  // Apply classes to body during hydration\n  useEffect(() => {\n    if (className) {\n      document.body.className = `${className} antialiased`;\n    } else {\n      document.body.className = \"antialiased\";\n    }\n  }, [className]);\n\n  return <body suppressHydrationWarning className={`${className || \"\"} antialiased`}>{children}</body>;\n}\n"],"names":[],"mappings":";;;;;AAEA;;;AAFA;;AAIe,SAAS,WAAW,KAMlC;QANkC,EACjC,QAAQ,EACR,SAAS,EAIV,GANkC;;IAOjC,yCAAyC;IACzC,IAAA,0KAAS;gCAAC;YACR,IAAI,WAAW;gBACb,SAAS,IAAI,CAAC,SAAS,GAAG,AAAC,GAAY,OAAV,WAAU;YACzC,OAAO;gBACL,SAAS,IAAI,CAAC,SAAS,GAAG;YAC5B;QACF;+BAAG;QAAC;KAAU;IAEd,qBAAO,6LAAC;QAAK,wBAAwB;QAAC,WAAW,AAAC,GAAkB,OAAhB,aAAa,IAAG;kBAAgB;;;;;;AACtF;GAjBwB;KAAA","debugId":null}}]
+}
