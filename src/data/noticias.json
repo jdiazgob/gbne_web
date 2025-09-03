@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "titulo": "Modernización del Puerto de La Guaira",
+    "categoria": "Infraestructura",
+    "fecha": "2024-03-20",
+    "autor": "María González",
+    "fotografo": "Carlos Martínez",
+    "imagenPortada": "/imagenes-noticias/puerto-guaira.jpg",
+    "descripcion": "El Gobierno Estadal anuncia importantes inversiones en la modernización portuaria para impulsar el comercio neoespartano.",
+    "contenido": "El proyecto incluye nuevas grúas, sistemas de carga y mejoras en la infraestructura logística. Esta modernización permitirá aumentar significativamente la capacidad de carga y descarga del puerto, beneficiando directamente al comercio local y regional. El gobernador destacó que esta inversión fortalecerá la posición estratégica de Nueva Esparta como puerto clave en el Caribe.",
+    "destacada": true,
+    "slug": "modernizacion-puerto-la-guaira"
+  },
+  {
+    "id": "2",
+    "titulo": "Festival \"Perla del Caribe\" 2024",
+    "categoria": "Cultura",
+    "fecha": "2024-03-18",
+    "autor": "Ana López",
+    "fotografo": "Luis Pérez",
+    "imagenPortada": "/imagenes-noticias/festival-perla.jpg",
+    "descripcion": "Celebración de la riqueza cultural, gastronómica y musical del Estado Nueva Esparta con artistas locales e internacionales.",
+    "contenido": "El Festival Perla del Caribe reúne a reconocidos artistas nacionales e internacionales en una muestra de la diversidad cultural de la región. Durante tres días, los asistentes podrán disfrutar de presentaciones musicales, exposiciones artísticas, degustaciones gastronómicas y actividades recreativas en distintos puntos de La Asunción y El Valle. Esta edición contará con más de 50 agrupaciones participantes.",
+    "destacada": false,
+    "slug": "festival-perla-del-caribe"
+  },
+  {
+    "id": "3",
+    "titulo": "Programa \"Vivienda Digna\"",
+    "categoria": "Programas Sociales",
+    "fecha": "2024-03-15",
+    "autor": "Roberto Silva",
+    "fotografo": "Elena Morales",
+    "imagenPortada": "/imagenes-noticias/vivienda-digna.jpg",
+    "descripcion": "Nueva fase del programa habitacional que beneficiará a 500 familias neoespartanas con viviendas dignas y servicios básicos.",
+    "contenido": "El Programa Vivienda Digna entregará este año 500 viviendas completamente equipadas con servicios de agua, luz y alcantarillado. Las familias beneficiadas fueron seleccionadas mediante un proceso transparente que priorizó a quienes carecen de vivienda propia o viven en condiciones precarias. Cada vivienda cuenta con dos dormitorios, cocina, baño y sala comedor, con un área total de 60 metros cuadrados.",
+    "destacada": false,
+    "slug": "programa-vivienda-digna"
+  }
+]

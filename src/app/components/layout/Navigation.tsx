@@ -14,9 +14,6 @@ export default function Navigation() {
             <Link href="/directorio" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">DIRECTORIO</Link>
             <Link href="/entes-adscritos" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">ENTES ADSCRITOS</Link>
             <Link href="/galerias" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">GALERÍAS</Link>
-            <Link href="/documentos" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">DOCUMENTOS</Link>
-            <Link href="/poder-popular" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">PODER POPULAR</Link>
-            <Link href="/servicios" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">SERVICIOS</Link>
           </div>
           <Button size="sm" className="bg-blue-600 hover:bg-blue-700" aria-label="Buscar">
             <Search className="w-4 h-4" />

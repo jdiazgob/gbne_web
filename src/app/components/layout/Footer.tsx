@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <Separator className="my-8 bg-gray-700" />
         <div className="text-center text-sm text-gray-400">
-          <p>&copy; 2025 Dirección del Poder Popular para la Tecnología de Comunicación e Informaciones GBNE, Todos los derechos reservados.</p>
+          <p>&copy; 2025 Desarrollado por: Dirección del Poder Popular para la Tecnología de Comunicación e Informaciones GBNE.</p>
         </div>
       </div>
     </footer>

@@ -7,24 +7,6 @@ import Link from "next/link"
 export default function EntesAdscritosPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation Header */}
-      <nav className="bg-white shadow-md">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex space-x-6 md:space-x-8 overflow-x-auto">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">INICIO</Link>
-              <Link href="/noticias" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">NOTICIAS</Link>
-              <Link href="/directorio" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">DIRECTORIO</Link>
-              <Link href="/entes-adscritos" className="text-blue-600 border-b-2 border-blue-600 font-medium whitespace-nowrap">ENTES ADSCRITOS</Link>
-              <Link href="/galerias" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">GALERÍAS</Link>
-              <Link href="/documentos" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">DOCUMENTOS</Link>
-              <Link href="/poder-popular" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">PODER POPULAR</Link>
-              <Link href="/servicios" className="text-gray-700 hover:text-blue-600 font-medium whitespace-nowrap">SERVICIOS</Link>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
@@ -419,67 +401,6 @@ export default function EntesAdscritosPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12 mt-12">
-        <div className="container mx-auto px-4">
-          {/* Official Logos Section - Sin texto */}
-          <div className="flex justify-between items-center mb-8 pb-8 border-b border-gray-700">
-            <div className="flex items-center">
-              <div className="w-16 h-12 bg-gradient-to-r from-yellow-400 via-blue-500 to-red-500 rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">VEN</span>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <div className="w-12 h-16 bg-gradient-to-b from-red-500 via-blue-500 to-yellow-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xs font-bold">🛡️</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-lg font-bold mb-4">Gobierno Bolivariano de Nueva Esparta</h3>
-              <p className="text-gray-300 text-sm">
-                Trabajando por el desarrollo integral del Estado Nueva Esparta y el bienestar de todos los neoespartanos.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Servicios</h4>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/tramites" className="hover:text-white">Trámites Estadales</a></li>
-                <li><a href="/pagos" className="hover:text-white">Pagos Gubernamentales</a></li>
-                <li><a href="/licencias" className="hover:text-white">Licencias y Permisos</a></li>
-                <li><a href="/atencion" className="hover:text-white">Atención al Ciudadano</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Información</h4>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/transparencia" className="hover:text-white">Transparencia</a></li>
-                <li><a href="/normativas" className="hover:text-white">Normativas</a></li>
-                <li><a href="/presupuesto" className="hover:text-white">Presupuesto Estadal</a></li>
-                <li><a href="/contacto" className="hover:text-white">Contacto</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contacto</h4>
-              <div className="text-sm text-gray-300 space-y-2">
-                <p>Edif Administrativo, Edif Ejecutivo</p>
-                <p>Avenida Simón Bolívar antigua Av. Constitución</p>
-                <p>La Asunción 6311, Nueva Esparta</p>
-                <p>Tel: 0295-2659915</p>
-                <p>Email: info@nuevaesparta.gob.ve</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8">
-            <div className="text-center text-sm text-gray-400">
-              <p>&copy; 2025 Dirección del Poder Popular para la Tecnología de Comunicación e Informaciones GBNE, Todos los derechos reservados.</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

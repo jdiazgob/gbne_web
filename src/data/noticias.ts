@@ -1,49 +1,43 @@
 // src/data/noticias.ts
 export type Noticia = {
   id: string;
-  slug: string;
   titulo: string;
   categoria: string;
   fecha: string;
   autor: string;
+  fotografo: string;
+  imagenPortada: string;
   descripcion: string;
-  imagenFondo: string; // Clase de gradiente o nombre de imagen
-  contenidoCompleto?: string;
-  destacada?: boolean;
+  contenido: string;
+  destacada: boolean;
+  slug: string;
 };
 
 export const noticias: Noticia[] = [
   {
     id: "1",
-    slug: "modernizacion-puerto-la-guaira",
-    titulo: "Modernización del Puerto de La Guaira",
+    titulo: "Modernización del Puerto de laGuaira",
     categoria: "Infraestructura",
-    fecha: "20 de Marzo, 2024",
-    autor: "Redactor: María González | Fotógrafo: Carlos Martínez",
-    descripcion: "El Gobierno Estadal anuncia importantes inversiones en la modernización portuaria para impulsar el comercio neoespartano.",
-    imagenFondo: "bg-gradient-to-br from-blue-500 to-blue-700",
+    fecha: "2024-03-20",
+    autor: "MaríaGonzález",
+    fotografo: "CarlosMartínez",
+    imagenPortada: "/imagenes-noticias/puerto-guaira.jpg",
+    descripcion: "El gobiernoEstadal anuncia importantes inversiones en la modernización portuaria.",
+    contenido: "el proyecto incluye nuevas grúas, sistemas de carga y mejoras en la infraestructura logística...",
     destacada: true,
+    slug: "modernizacion-puerto-la-guaira"
   },
   {
     id: "2",
-    slug: "festival-perla-del-caribe",
-    titulo: "Festival 'Perla del Caribe' 2024",
+    titulo: "Festival \"Perla del Caribe\" 2024",
     categoria: "Cultura",
-    fecha: "18 de Marzo, 2024",
-    autor: "Periodista: Ana López | Redactor: Luis Pérez",
-    descripcion: "Celebración de la riqueza cultural, gastronómica y musical del Estado Nueva Esparta con artistas locales e internacionales.",
-    imagenFondo: "bg-gradient-to-br from-green-500 to-green-700",
+    fecha: "2024-03-18",
+    autor: "Ana López",
+    fotografo: "Luis Pérez",
+    imagenPortada: "/imagenes-noticias/festival-perla.jpg",
+    descripcion: "Celebración de la riqueza cultural, gastronómica y musical delEstado NuevaEsparta.",
+    contenido: "el festival reúne a reconocidos artistas nacionales e internacionales en una muestra de la diversidad cultural de la región.",
     destacada: false,
-  },
-  {
-    id: "3",
-    slug: "programa-vivienda-digna",
-    titulo: "Programa 'Vivienda Digna'",
-    categoria: "Programas Sociales",
-    fecha: "15 de Marzo, 2024",
-    autor: "Periodista: Roberto Silva | Fotógrafo: Elena Morales",
-    descripcion: "Nueva fase del programa habitacional que beneficiará a 500 familias neoespartanas con viviendas dignas y servicios básicos.",
-    imagenFondo: "bg-gradient-to-br from-purple-500 to-purple-700",
-    destacada: false,
-  },
+    slug: "festival-perla-del-caribe"
+  }
 ];

@@ -5,6 +5,10 @@ import Link from "next/link"
 export default function PoderPopular() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+      {/* 
+        SUGERENCIA: El Header y el Footer deberían extraerse a un componente Layout reutilizable 
+        para evitar duplicación de código en cada página.
+      */}
       {/* Header */}
       <header className="bg-white shadow-lg">
         <div className="bg-slate-800 text-white py-4">
@@ -67,8 +71,10 @@ export default function PoderPopular() {
                   Los consejos comunales son la instancia de participación más cercana al pueblo,
                   donde se planifican proyectos para el desarrollo de las comunidades.
                 </p>
-                <Button variant="outline" className="w-full">
-                  Ver Consejos Comunales
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href="/poder-popular/consejos-comunales">
+                    Ver Consejos Comunales
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -85,8 +91,10 @@ export default function PoderPopular() {
                   Las comunas agrupan varios consejos comunales en un territorio determinado
                   para desarrollar proyectos de mayor envergadura.
                 </p>
-                <Button variant="outline" className="w-full">
-                  Ver Comunas Registradas
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href="/poder-popular/comunas">
+                    Ver Comunas Registradas
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -103,8 +111,10 @@ export default function PoderPopular() {
                   Instancias de articulación entre el poder popular y las instituciones
                   para la ejecución de políticas públicas.
                 </p>
-                <Button variant="outline" className="w-full">
-                  Contactar Salas
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href="/poder-popular/salas-de-batalla">
+                    Contactar Salas
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -121,8 +131,10 @@ export default function PoderPopular() {
                   Espacios para que la ciudadanía participe activamente en la gestión
                   pública y el desarrollo del estado.
                 </p>
-                <Button variant="outline" className="w-full">
-                  Participar
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href="/servicios/participacion">
+                    Participar
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -215,7 +227,7 @@ export default function PoderPopular() {
           </div>
 
           <div className="border-t border-slate-700 pt-6 text-center text-slate-400">
-            <p>© 2025 Dirección del Poder Popular para la Tecnología de Comunicación e Informaciones GBNE, Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Dirección del Poder Popular para la Tecnología de Comunicación e Informaciones GBNE, Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
